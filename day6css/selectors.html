@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        /* element selektör */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /* class noktadir */
+        .favori {
+            border-left: 10px solid blueviolet;
+            ;
+        }
+
+        /* id */
+        #memleket {
+            text-align: center;
+        }
+
+        /* after sözde elementi */
+        #memleket::after {
+            content: "OTOPARK";
+            font-weight: bold;
+        }
+
+        /* immediate child */
+        div>p {
+            margin: 0 90px;
+            text-align: justify;
+            font-size: 80%;
+        }
+
+        /* bosluk koyarsan divdeki bütün p ler etkilenir */
+        div p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* gruplama */
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+        /* attribute selektor */
+        [title] {
+background-color: yellow;
+        }
+        li[title] {
+            font-size: italic;
+        }
+        li:nth-child(6) {
+            background-color: blueviolet;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px red;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- title mouse ile üstüne gelince cikan yazi -->
+    <h1>Türkiye</h1>
+    <h2>Kütahya</h2>
+    <p>
+        kütahya iyidir güzeldir porseleni meshurdur.tarim icin iyidir.köklü bir sehirdir.sikkelere göre bilgiler vardir.
+        bu bilgiler falan filandir.
+    </p>
+    <p>
+        tabak canak cok meshurdur.10 tane tabak
+        5 liradir. bir sürü daglar vardir.
+        ilceler falan filan güzel yerdir.
+        tavsanlida yasayan insanlar vardir.googlelamamak icin daha cok ugrastim resmen.kütahya.
+    </p>
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia explicabo beatae praesentium!
+        </p>
+        <section>
+            <p>
+                bu satir <span title="ABIDIK">section</span> icinde diye etkilenmiyor.
+            </p>
+        </section>
+    </div>
+    <ul>
+        <li>altintas</li>
+        <li>aslanapa</li>
+        <li title="dikkat antik kent">cavdarhisar</li>
+        <li class="favori">domanic</li>
+        <li>dumlupinar</li>
+        <li>enet</li>
+        <li class="favori">gediz</li>
+        <li>hisarcik</li>
+        <li>pazarlar</li>
+        <li class="favori">simav</li>
+        <li>saphane</li>
+        <li id="memleket">tavsanli</li>
+    </ul>
+</body>
+
+</html>
