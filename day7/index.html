@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors 2</title>
+    <style>
+        .onemli {
+            border-left: 10px solid green;
+        }
+        /* oneliden sonra gelen */
+        .onemli+li {
+            border-left: 10px solid red;
+        }
+        /* onemliden sonra gelenlerr */
+        .onemli~li  {
+            border-left: 10px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Dolores, laudantium?</li>
+        <li class="onemli">Animi, delectus!</li>
+        <li>Hic, ab.</li>
+        <li>Iste, odio!</li>
+        <li>Vero, facere.</li>
+        <li>Rem, neque.</li>
+        <li>Itaque, provident?</li>
+        <li>Autem, quae!</li>
+    </ul>
+</body>
+</html>
