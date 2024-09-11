@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sozde element</title>
+    <style>
+        p{
+            text-align: justify;
+        }
+        p::first-letter {
+
+            font-size: 3em;
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+        }
+        p::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        main {
+            max-width: 900px;
+            /*      y  x  ekseni */
+            margin: 40px auto 0;
+            background-color: aquamarine;
+            background-image: linear-gradient(180deg, blue 0%, pink 100%);
+            padding: 36px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 20px black, 0 0 60px orange;
+        }
+        @media (max-width: 70px) {
+            main {
+                margin: 40px
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- p*4>lorem -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis accusantium reiciendis molestiae eos, iure numquam magni soluta commodi magnam ipsam et in officiis, harum porro at praesentium tempore quibusdam?</p>
+        <p>Voluptate tempora minus dicta repudiandae aut illo. Sint recusandae dolor labore, quia, suscipit minima aliquam nulla quaerat facilis illum est nobis odio iusto velit. Fuga nesciunt inventore expedita? Harum, nobis!</p>
+        <p>Odio ad repudiandae recusandae fugit nisi temporibus ipsam aperiam, autem praesentium, accusantium animi voluptatem voluptatibus sunt necessitatibus iste, consequatur iusto. Nesciunt commodi, veritatis nobis eaque libero molestiae vero voluptates in?</p>
+        <p>Quaerat amet dolorum provident ipsum magnam non aspernatur debitis, voluptates repellendus eius nihil, sint molestiae, necessitatibus deserunt possimus perspiciatis! Neque sunt quasi, porro est dicta veniam maxime nesciunt ex. Odit.</p>
+    </main>
+</body>
+</html>
