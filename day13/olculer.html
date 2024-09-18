@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ölcü birimleri</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+        .Cubuk1 {
+            height: 20px;
+            background-color: purple;
+            width: 96px;
+        }
+        .sbuk2 {
+            height: 20px;
+            background-color: pink;
+            width: 6rem;
+        }
+        .sbuk3 {
+            height: 20px;
+            background-color: green;
+            width: 6em;
+        }
+        .sbuk2-kapsayici{
+            font-size: 10px;
+        }
+        .cubuk3-kapsayici {
+            font-size: 10px;
+        }
+        /* 1px ekrandaki en ufak nokta (mobil cihazlarda cihaza göre ölcekleme saglamak icin viewport meta tagi kullanilir ve px hesaplamasi 2-3 noktaya karsilik gecelek sekilde hesaplanabilir)
+        
+        1rem: html kök elementinin font size degeridir.bircok tarayicida html elementi 16px varsayilandir
+        
+        1em: 1 elementin parentindan miras aldigi font sizeina karsilik gelir.*/
+    </style>
+</head>
+<body>
+    <h1>Ölcü Birimleri</h1>
+    <h2>Genisligi 96px olan bir div</h2>
+    <div class="Cubuk1"></div>
+    <h2>genisligi 6rem olan bir div</h2>
+    <div class="sbuk2-kapsayici">
+        <div class="sbuk2"></div>
+    </div>
+    <div class="cubuk3-kapsayici">
+    <h2>genisligi 6em olan bir div</h2>
+    <div class="sbuk3"></div>
+ <div class="soru1">
+    <div class="soru1-a">
+        <div class="soru1-b">
+            <div class="soru1-c"></div>
+        </div>
+    </div>
+ </div>
+</div>
+</body>
+</html>
